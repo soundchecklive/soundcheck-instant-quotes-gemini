@@ -57,7 +57,12 @@ If you configure MCP by hand instead of installing the extension:
 
 ## Gallery listing (maintainers)
 
-For this repo to appear in the Gemini CLI Extensions Gallery crawl, a maintainer must add the GitHub repository topic **`gemini-cli-extension`** on the repository settings page. That step is human-only; this README does not imply the topic is already set.
+Auto-listing on [geminicli.com/extensions](https://geminicli.com/extensions/) requires:
+
+1. Public GitHub repo with `gemini-extension.json` at the **absolute root** (this package)
+2. GitHub topic **`gemini-cli-extension`** on the repo About section
+
+Adding the topic (and owning the gallery crawl) is a **humans-only** maintainer step — typically Steven. This README does **not** claim the topic is already set. Official release docs: [Releasing extensions](https://geminicli.com/docs/extensions/releasing/).
 
 ## Repository layout
 
@@ -84,9 +89,12 @@ Instant Quotes here is public, anonymous, and estimate-only.
 ## Links
 
 - Product: [soundchecklive.io](https://soundchecklive.io)
-- This repo: [github.com/soundchecklive/soundcheck-instant-quotes-gemini](https://github.com/soundchecklive/soundcheck-instant-quotes-gemini)
-- Public Instant Quotes MCP base: `https://mcp.soundchecklive.io/public/mcp`
+- MCP docs: [docs.soundchecklive.io/integrations/mcp-server](https://docs.soundchecklive.io/integrations/mcp-server)
+- MCP discovery: [docs.soundchecklive.io/integrations/mcp-discovery](https://docs.soundchecklive.io/integrations/mcp-discovery)
+- Privacy: [soundchecklive.io/privacy](https://soundchecklive.io/privacy)
+- Sibling Claude Instant Quotes: [soundcheck-plugin/instant-quotes](https://github.com/soundchecklive/soundcheck-plugin/tree/main/instant-quotes)
+- Writing Gemini extensions: [geminicli.com/docs/extensions](https://geminicli.com/docs/extensions/writing-extensions/)
 
 ## License
 
-MIT © [Soundcheck Live, Inc.](https://soundchecklive.io) — see [LICENSE](./LICENSE).
+MIT © Soundcheck Live, Inc. — see [LICENSE](./LICENSE).
