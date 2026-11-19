@@ -1,10 +1,10 @@
 {
   "name": "soundcheck-instant-quotes",
   "version": "0.1.0",
-  "description": "Soundcheck Instant Quotes — anonymous public MCP for live-event cost estimates (parties, weddings, conferences, concerts, offsites). No login. Estimates are SYNTHETIC and illustrative from a versioned catalog (not real COGS, not a binding quote).",
+  "description": "Soundcheck public MCP, no login: a live event directory of vendors, talent, venues and hotels, plus standard data for crew roles, gear and event files, evidence-backed market pricing and illustrative (SYNTHETIC, non-binding) cost estimates.",
   "mcpServers": {
     "soundcheck-instant-quotes": {
-      "description": "Soundcheck public Instant Quotes MCP (auth none). Streamable HTTP.",
+      "description": "Soundcheck public live event directory MCP (auth none). Streamable HTTP.",
       "httpUrl": "https://mcp.soundchecklive.io/public/mcp"
     }
   },

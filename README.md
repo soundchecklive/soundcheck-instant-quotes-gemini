@@ -1,15 +1,23 @@
 # Soundcheck Instant Quotes (Gemini CLI Extension)
 
-Gemini CLI **Extensions Gallery** package that wires [Google Gemini CLI](https://github.com/google-gemini/gemini-cli) to Soundcheck’s **public** [Instant Quotes](https://soundchecklive.io) MCP. No login, no API keys: anonymous illustrative cost estimates for live events (parties, weddings, conferences, concerts, festivals, galas, offsites).
+Gemini CLI **Extensions Gallery** package that wires [Google Gemini CLI](https://github.com/google-gemini/gemini-cli) to Soundcheck’s **public** MCP: a live event directory and the data standards behind it. Soundcheck is live event digital infrastructure: the primitives agents need to manage any type of event. No login, no API keys.
 
-## Honesty
+## What it covers
 
-Estimates come from Soundcheck’s **versioned pricing catalog** and a deterministic engine. Numbers are **SYNTHETIC and illustrative**:
+- **Directory:** event businesses (AV and production, sound, lighting, staging, backline, video, DJs, live bands, agencies, planners, caterers, photographers, rentals, decor, staffing, security, transportation) by category and city via `search_businesses` / `get_business`; a seeded catalog of well-known venues and hotels via `search_places` / `get_place`; public organization profiles via `get_public_org`. Listings are researched from public websites and cached, so coverage varies by city and category.
+- **Standard event data:** crew roles (`list_positions`, `normalize_positions`), gear (`search_inventory`, `normalize_inventory`), and Universal Event Format files (`read_event_details`, `get_import_format`, `check_import_file`).
+- **Pricing:** evidence-backed market ranges (`lookup_market_pricing`) and illustrative cost estimates (`quote_event`, `list_quote_packages`).
+
+The extension keeps its original `soundcheck-instant-quotes` name so existing installs keep working.
+
+## Honesty: estimates
+
+`quote_event` estimates come from Soundcheck’s **versioned pricing catalog** and a deterministic engine. Numbers are **SYNTHETIC and illustrative**:
 
 - Not real cost of goods (COGS)
 - Not a binding quote, contract, or invoice
 
-Always say so when you share ranges with users.
+Ranges are shared with that label.
 
 ## Install
 
@@ -74,7 +82,7 @@ Adding the topic (and owning the gallery crawl) is a **humans-only** maintainer 
 ├── LICENSE
 └── skills/
     └── quote-an-event/
-        └── SKILL.md        # Skill: quote_event flow + SYNTHETIC disclaimer
+        └── SKILL.md        # Skill: directory research, then estimates (SYNTHETIC disclaimer)
 ```
 
 ## Not this extension
@@ -84,7 +92,7 @@ Adding the topic (and owning the gallery crawl) is a **humans-only** maintainer 
 - URL: `https://mcp.soundchecklive.io/mcp`
 - Auth: OAuth
 
-Instant Quotes here is public, anonymous, and estimate-only.
+This extension is public, anonymous and read-focused: directory, standard event data and pricing.
 
 ## Links
 
@@ -92,7 +100,7 @@ Instant Quotes here is public, anonymous, and estimate-only.
 - MCP docs: [docs.soundchecklive.io/integrations/mcp-server](https://docs.soundchecklive.io/integrations/mcp-server)
 - MCP discovery: [docs.soundchecklive.io/integrations/mcp-discovery](https://docs.soundchecklive.io/integrations/mcp-discovery)
 - Privacy: [soundchecklive.io/privacy](https://soundchecklive.io/privacy)
-- Sibling Claude Instant Quotes: [soundcheck-plugin/instant-quotes](https://github.com/soundchecklive/soundcheck-plugin/tree/main/instant-quotes)
+- Sibling Claude plugin (public directory): [soundcheck-plugin/instant-quotes](https://github.com/soundchecklive/soundcheck-plugin/tree/main/instant-quotes)
 - Writing Gemini extensions: [geminicli.com/docs/extensions](https://geminicli.com/docs/extensions/writing-extensions/)
 
 ## License
