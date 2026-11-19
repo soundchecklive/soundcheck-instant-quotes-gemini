@@ -1,4 +1,4 @@
-# Soundcheck Instant Quotes (Gemini CLI Extension)
+# Soundcheck Event Directory (Gemini CLI extension)
 
 Gemini CLI **Extensions Gallery** package that wires [Google Gemini CLI](https://github.com/google-gemini/gemini-cli) to Soundcheck’s **public** MCP: a live event directory and the data standards behind it. Soundcheck is live event digital infrastructure: the primitives agents need to manage any type of event. No login, no API keys.
 

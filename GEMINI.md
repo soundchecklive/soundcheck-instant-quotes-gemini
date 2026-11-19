@@ -1,4 +1,4 @@
-# Soundcheck public MCP: live event directory
+# Soundcheck Event Directory (public MCP)
 
 This extension connects Soundcheck's **public** MCP (`soundcheck-instant-quotes`). Auth is **none**: no API keys, no OAuth. Soundcheck is live event digital infrastructure: the primitives agents need to manage any type of event.
 
