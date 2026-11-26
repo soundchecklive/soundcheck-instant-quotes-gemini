@@ -1,6 +1,8 @@
-# Soundcheck Event Directory (Gemini CLI extension)
+# Soundcheck Live Event Directory (Gemini CLI extension)
 
-Gemini CLI **Extensions Gallery** package that wires [Google Gemini CLI](https://github.com/google-gemini/gemini-cli) to Soundcheck’s **public** MCP: a live event directory and the data standards behind it. Soundcheck is live event digital infrastructure: the primitives agents need to manage any type of event. No login, no API keys.
+Gemini CLI **Extensions Gallery** package that wires [Google Gemini CLI](https://github.com/google-gemini/gemini-cli) to the **public** MCP from [Soundcheck Live](https://soundchecklive.io): a live event directory and the data standards behind it. No login, no API keys.
+
+Soundcheck Live is staffing software for live events: book gigs, send shift offers to freelance crew, share the run of show on crew phones, and track and pay crew per gig. To run your own gigs and crew from an AI assistant, use the member MCP server: see [soundcheck-plugin](https://github.com/soundchecklive/soundcheck-plugin) and [soundchecklive.io/mcp](https://soundchecklive.io/mcp).
 
 ## What it covers
 
